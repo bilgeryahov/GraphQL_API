@@ -1,3 +1,4 @@
 .idea
 GraphQL_API/node_modules
 GraphQL_API/package-lock.json
+GraphQL_API/dist/
