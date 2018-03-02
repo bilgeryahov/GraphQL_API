@@ -2,7 +2,9 @@ import {
 	GraphQLObjectType,
 	GraphQLString,
 	GraphQLInt,
-	GraphQLList
+	GraphQLList,
+	GraphQLNonNull,
+	GraphQLInputObjectType
 } from 'graphql';
 
 import Author from './Author';
@@ -30,4 +32,19 @@ export const Post = new GraphQLObjectType({
 			}
 		}
 	})
+});
+
+export const PostInputType = new GraphQLInputObjectType({
+	name: 'PostInput',
+	fields: {
+		title: {
+			type: new GraphQLNonNull(GraphQLString)
+		},
+		content: {
+			type: new GraphQLNonNull(GraphQLString)
+		},
+		author: {
+			type: new GraphQLNonNull(GraphQLString)
+		}
+	}
 });
