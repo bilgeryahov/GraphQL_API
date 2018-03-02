@@ -3,7 +3,7 @@ import {
 }
 from 'graphql';
 
-import Post from '../types/Post';
+import { Post } from '../types/Post';
 import { fakeDatabase } from '../../FakeDatabase';
 
 export default {

@@ -4,7 +4,7 @@ import {
 	GraphQLList
 } from 'graphql';
 
-import Post from './Post';
+import { Post } from './Post';
 
 import {fakeDatabase} from "../../FakeDatabase";
 

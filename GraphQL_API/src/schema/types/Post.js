@@ -7,8 +7,8 @@ import {
 	GraphQLInputObjectType
 } from 'graphql';
 
-import Author from './Author';
-import Comment from './Comment';
+import { Author } from './Author';
+import { Comment } from './Comment';
 
 import { fakeDatabase } from '../../FakeDatabase';
 
